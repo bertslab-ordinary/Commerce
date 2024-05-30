@@ -1,0 +1,1 @@
+Microservices library, that keeps reusable and common code through all the go microservices.
