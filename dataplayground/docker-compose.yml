@@ -9,3 +9,13 @@ services:
           - ./mongodb_data:/data/db
     ports:
       - "27017:27017"
+    
+  dataplayground:
+    
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    volumes:
+      - ./data_model.ipynb:/home/joyyan/data_model.ipynb
+    ports:
+      - "8888:8888"
